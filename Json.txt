@@ -1,0 +1,15 @@
+    articulo = models.CharField(max_length=200)
+    precio = models.DecimalField(max_digits=12, decimal_places=2)
+    cantidad = models.PositiveIntegerField(default=0)
+    detalle = models.TextField(max_length=200)
+    estado = models.CharField(max_length=100,choices=ESTADO_CHOICES)
+    total = models.DecimalField(max_digits=12, decimal_places=2)
+
+{
+"articulo":"PAPA",
+"precio":3.00,
+"cantidad":10,
+"detalle":"Compra en Supermercado",
+"estado":"vendido",
+"total":30.00
+}
